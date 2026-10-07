@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Affan ❤️ Arsalan</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#090909,#171717,#050505);
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.card{
+  width:100%;
+  max-width:500px;
+  padding:35px 22px;
+  text-align:center;
+  border:1px solid #333;
+  border-radius:25px;
+  background:rgba(20,20,20,.92);
+  box-shadow:0 0 35px rgba(255,255,255,.08);
+}
+
+.emoji{
+  font-size:55px;
+  margin-bottom:15px;
+}
+
+h1{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.names{
+  color:#ff4d6d;
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:25px;
+}
+
+.line{
+  height:1px;
+  background:#333;
+  margin:20px 0;
+}
+
+.message{
+  font-size:18px;
+  line-height:1.7;
+  color:#ddd;
+}
+
+.highlight{
+  color:#fff;
+  font-weight:bold;
+}
+
+button{
+  margin-top:25px;
+  padding:14px 25px;
+  border:0;
+  border-radius:30px;
+  background:#ff4d6d;
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+button:active{
+  transform:scale(.96);
+}
+
+#secret{
+  display:none;
+  margin-top:25px;
+  padding:20px;
+  border-radius:18px;
+  background:#111;
+  border:1px solid #333;
+  line-height:1.7;
+  color:#eee;
+}
+
+.footer{
+  margin-top:25px;
+  font-size:13px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="emoji">🤝❤️</div>
+
+  <h1>Best Bhai Forever</h1>
+
+  <div class="names">
+    AFFAN × ARSALAN
+  </div>
+
+  <div class="line"></div>
+
+  <div class="message">
+    Bhai sirf naam ka nahi hota...<br>
+    <span class="highlight">dil se bhai hota hai.</span>
+    <br><br>
+
+    Affan, tu mere liye sirf ek dost nahi,
+    <span class="highlight">mera bhai hai.</span>
+    <br><br>
+
+    Life mein kitne bhi log aayein,
+    asli bhai wali bonding
+    <span class="highlight">alag hi hoti hai.</span>
+  </div>
+
+  <button onclick="showMessage()">
+    ❤️ Bhai ke liye
+  </button>
+
+  <div id="secret">
+    🫂 <b>Affan bhai,</b><br><br>
+    Har time saath ho ya door,
+    bhai wali jagah hamesha same rahegi.
+    <br><br>
+    <b>Arsalan 🤝 Affan</b><br>
+    Brothers by bond, forever by heart ❤️
+  </div>
+
+  <div class="footer">
+    Made with brotherhood ❤️
+  </div>
+
+</div>
+
+<script>
+function showMessage(){
+  const box = document.getElementById("secret");
+
+  if(box.style.display === "block"){
+    box.style.display = "none";
+  }else{
+    box.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
